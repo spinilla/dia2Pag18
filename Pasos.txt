@@ -1,0 +1,164 @@
+0012644@PC09RNCD MINGW64 /c/GitEjercicios
+$ git clone https://github.com/spinilla/dia2Pag18.git
+Cloning into 'dia2Pag18'...
+warning: You appear to have cloned an empty repository.
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios
+$ cd dia2Pag18/
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git add .
+git
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git commit -m "Added File1"
+[master (root-commit) e717da9] Added File1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 File1.txt
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git add .
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git commit -m "Added File2"
+[master 22e88c5] Added File2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 File2.txt
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git add .
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git commit -m "Added File2"
+[master 4cdacdd] Added File2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 File3.txt
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git commit -m "Added File3" --amend
+[master 3d7a607] Added File3
+ Date: Thu Feb 8 16:26:34 2018 +0100
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 File3.txt
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git add .
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git commit -m "Added File4"
+[master e2224ad] Added File4
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 File4.txt
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git add .
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git commit -m "Added File5"
+[master 7dccc4c] Added File5
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 File5.txt
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git log --all
+commit 7dccc4cc90d55f09924359cab426c1a7332c57ae (HEAD -> master)
+Author: SERGIO PINILLA GARCIA <spinillag@viewnext.com>
+Date:   Thu Feb 8 16:27:52 2018 +0100
+
+    Added File5
+
+commit e2224ad90b2dd82c1fd92ae3f089afc20f2b64f5
+Author: SERGIO PINILLA GARCIA <spinillag@viewnext.com>
+Date:   Thu Feb 8 16:27:38 2018 +0100
+
+    Added File4
+
+commit 3d7a60749120b8cdb7ed1ef7b94b410e10c13bdb
+Author: SERGIO PINILLA GARCIA <spinillag@viewnext.com>
+Date:   Thu Feb 8 16:26:34 2018 +0100
+
+    Added File3
+
+commit 22e88c5f9a034c236ea0cb68ace783df4658e6a4
+Author: SERGIO PINILLA GARCIA <spinillag@viewnext.com>
+Date:   Thu Feb 8 16:26:21 2018 +0100
+
+    Added File2
+
+commit e717da97ee39381aa7eacff213a2db9d79795a51
+Author: SERGIO PINILLA GARCIA <spinillag@viewnext.com>
+Date:   Thu Feb 8 16:26:02 2018 +0100
+
+    Added File1
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git tag -a v0.8 3d7a60749120b8cdb7ed1ef7b94b410e10c13bdb
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git push origin
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 995 bytes | 0 bytes/s, done.
+Total 11 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/spinilla/dia2Pag18.git
+ * [new branch]      master -> master
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git push origin --tags
+Counting objects: 1, done.
+Writing objects: 100% (1/1), 183 bytes | 0 bytes/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To https://github.com/spinilla/dia2Pag18.git
+ * [new tag]         v0.8 -> v0.8
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git add .
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git commit -m "Editado el file 5"
+[master f259e6e] Editado el file 5
+ 1 file changed, 1 insertion(+)
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git push origin master
+git checkout v0.8Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 287 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/spinilla/dia2Pag18.git
+   7dccc4c..f259e6e  master -> master
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$ git checkout v0.8
+Note: checking out 'v0.8'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 3d7a607... Added File3
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 ((v0.8))
+$ git checkout master
+Previous HEAD position was 3d7a607... Added File3
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+0012644@PC09RNCD MINGW64 /c/GitEjercicios/dia2Pag18 (master)
+$
